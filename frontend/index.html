@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maple Street Bakery</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        form {
+            width: 300px;
+            margin: auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🍞 Maple Street Bakery</h1>
+    <p>Contact us for custom cakes and orders!</p>
+
+    <form action="http://localhost:5000/submit" method="POST">
+        
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</body>
+</html>
