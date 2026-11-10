@@ -8,7 +8,7 @@ def get_db():
     return psycopg2.connect(
         dbname=os.environ.get("POSTGRES_DB", "contacts"),
         user=os.environ.get("POSTGRES_USER", "postgres"),
-        password=os.environ.get("POSTGRES_PASSWORD", "password"),
+        password=os.environ["POSTGRES_PASSWORD"],
         host="db"
     )
 
